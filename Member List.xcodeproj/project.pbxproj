@@ -15,6 +15,7 @@
 		3092F856298E2A6D00C9B1E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3092F854298E2A6D00C9B1E6 /* LaunchScreen.storyboard */; };
 		3092F861298E2DE500C9B1E6 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F860298E2DE500C9B1E6 /* Member.swift */; };
 		3092F863298E308E00C9B1E6 /* MemberListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F862298E308E00C9B1E6 /* MemberListManager.swift */; };
+		3092F865298E339E00C9B1E6 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F864298E339E00C9B1E6 /* MemberTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3092F857298E2A6D00C9B1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3092F860298E2DE500C9B1E6 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		3092F862298E308E00C9B1E6 /* MemberListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListManager.swift; sourceTree = "<group>"; };
+		3092F864298E339E00C9B1E6 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3092F84F298E2A6C00C9B1E6 /* Main.storyboard */,
+				3092F864298E339E00C9B1E6 /* MemberTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3092F863298E308E00C9B1E6 /* MemberListManager.swift in Sources */,
+				3092F865298E339E00C9B1E6 /* MemberTableViewCell.swift in Sources */,
 				3092F84E298E2A6C00C9B1E6 /* ViewController.swift in Sources */,
 				3092F84A298E2A6C00C9B1E6 /* AppDelegate.swift in Sources */,
 				3092F84C298E2A6C00C9B1E6 /* SceneDelegate.swift in Sources */,
