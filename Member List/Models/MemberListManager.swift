@@ -33,4 +33,13 @@ final class MemberListManager {
     func updateMember(index: Int, _ member: Member) {
         memberList[index] = member
     }
+    
+    subscript(index: Int) -> Member {
+        get {
+            return memberList[index]
+        }
+        set {
+            memberList[index] = newValue
+        }
+    }
 }
