@@ -17,6 +17,7 @@
 		3092F863298E308E00C9B1E6 /* MemberListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F862298E308E00C9B1E6 /* MemberListManager.swift */; };
 		3092F865298E339E00C9B1E6 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F864298E339E00C9B1E6 /* MemberTableViewCell.swift */; };
 		3092F867298FE08100C9B1E6 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F866298FE08100C9B1E6 /* NextViewController.swift */; };
+		3092F869298FE0BE00C9B1E6 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092F868298FE0BE00C9B1E6 /* NextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3092F862298E308E00C9B1E6 /* MemberListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListManager.swift; sourceTree = "<group>"; };
 		3092F864298E339E00C9B1E6 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
 		3092F866298FE08100C9B1E6 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		3092F868298FE0BE00C9B1E6 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				3092F84F298E2A6C00C9B1E6 /* Main.storyboard */,
 				3092F864298E339E00C9B1E6 /* MemberTableViewCell.swift */,
+				3092F868298FE0BE00C9B1E6 /* NextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				3092F863298E308E00C9B1E6 /* MemberListManager.swift in Sources */,
 				3092F867298FE08100C9B1E6 /* NextViewController.swift in Sources */,
 				3092F865298E339E00C9B1E6 /* MemberTableViewCell.swift in Sources */,
+				3092F869298FE0BE00C9B1E6 /* NextView.swift in Sources */,
 				3092F84E298E2A6C00C9B1E6 /* ViewController.swift in Sources */,
 				3092F84A298E2A6C00C9B1E6 /* AppDelegate.swift in Sources */,
 				3092F84C298E2A6C00C9B1E6 /* SceneDelegate.swift in Sources */,
