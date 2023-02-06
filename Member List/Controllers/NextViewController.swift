@@ -17,8 +17,16 @@ final class NextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setUpButtonAction()
     }
 
+    func setUpButtonAction() {
+        nextView.saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func saveButtonTapped() {
+        print("버튼 터치")
+    }
 
 }
