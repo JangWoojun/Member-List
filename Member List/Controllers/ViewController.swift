@@ -15,6 +15,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
         tableView.dataSource = self
         memberListManager.makeDatas()
         makeUI()
@@ -63,6 +64,13 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-    
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = NextViewController()
+        
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
 }
 
