@@ -70,6 +70,9 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = NextViewController()
         
+        let array = memberListManager.getMemberList()
+        nextVC.member = array[indexPath.row]
+        
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }

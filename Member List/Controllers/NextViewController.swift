@@ -10,9 +10,11 @@ import UIKit
 final class NextViewController: UIViewController {
 
     private let nextView = NextView()
+    var member: Member?
     
     override func loadView() {
         view = nextView
+        nextView.member = member
     }
     
     override func viewDidLoad() {
