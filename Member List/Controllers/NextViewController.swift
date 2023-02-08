@@ -28,7 +28,42 @@ final class NextViewController: UIViewController {
     }
     
     @objc func saveButtonTapped() {
-        print("버튼 터치")
+        if member == nil {
+            let name = nextView.nameTextField.text ?? ""
+            let age = Int(nextView.ageTextField.text ?? "")
+            let phoneNumber = nextView.phoneNumberTextField.text ?? ""
+            let address = nextView.addressTextField.text ?? ""
+            
+            var newMember =
+            Member(name: name, age: age, phone: phoneNumber, address: address)
+            newMember.memberImage = nextView.mainImageView.image
+            
+            let index = navigationController!.viewControllers.count - 2
+            let vc = navigationController?.viewControllers[index] as! ViewController
+            vc.memberListManager.makeMember(newMember)
+            
+            
+            
+        } else {
+            member!.memberImage = nextView.mainImageView.image
+            
+            let memberId = Int(nextView.memberIdTextField.text!) ?? 0
+            member!.name = nextView.nameTextField.text ?? ""
+            member!.age = Int(nextView.ageTextField.text ?? "") ?? 0
+            member!.phone = nextView.phoneNumberTextField.text ?? ""
+            member!.address = nextView.addressTextField.text ?? ""
+            
+            nextView.member = member
+            
+            let index = navigationController!.viewControllers.count - 2
+            let vc = navigationController?.viewControllers[index] as! ViewController
+            vc.memberListManager.updateMember(index: memberId, member!)
+            
+            
+            
+        }
+        
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

@@ -10,7 +10,7 @@ import UIKit
 final class ViewController: UIViewController {
     
     private let tableView = UITableView()
-    private var memberListManager = MemberListManager()
+    var memberListManager = MemberListManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,12 @@ final class ViewController: UIViewController {
         tableView.dataSource = self
         memberListManager.makeDatas()
         makeUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
     }
     
     func makeUI() {
